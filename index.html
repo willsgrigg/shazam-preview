@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div class="controls">
+			<label for="origin">Origin: </label><input name="origin" id="origin">
+			<button type="button" class="origin-button">Submit</button>
+			<form action="shazam">
+				<input type="radio" name="shazam" value="none" id="none"><label for="none">None</label>
+				<input type="radio" name="shazam" value="shazam" id="shazam"><label for="shazam">Shazam</label>
+				<input type="radio" name="shazam" value="my-shazam" id="my-shazam"><label for="my-shazam">My Shazam</label>
+			</form>
+			<form action="devices-filters">
+				<h2>OS</h2>
+				<button type="button" id="show-all">All</button>
+				<button type="button" id="show-ios">iOS</button>
+				<button type="button" id="show-android">Android</button>
+			</form>
+			<form action="devices"></form>
+		</div>
+
+		<div class="iframes"></div>
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+		<script>
+			var src = '/Users/willsgrigg/Sites/diageo-be-at-one/redeem.html';
+
+			init();
+		</script>
+	</body>
+
+</html>

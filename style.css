@@ -1,0 +1,43 @@
+body {
+	background: #1A1E24;
+	color: #FFF;
+	font: 12px 'Raleway', sans-serif;
+}
+
+.iframes {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+	.iframe-container {
+		display: inline-block;
+		margin: 10px;
+	}
+
+#origin {
+	width: 50%;
+}
+
+button {
+	border-radius: 2px;
+	background: none;
+	color: white;
+	border: solid 2px white;
+	padding: 10px 15px;
+	font-size: 16px;
+	transition: all ease 0.3s;
+	cursor: pointer;
+}
+
+button.active {
+	outline: none;
+	color: #E9C15C;
+	border-color: #E9C15C;
+}
+
+button:active,
+button:focus,
+button:hover {
+	outline: none;
+}
